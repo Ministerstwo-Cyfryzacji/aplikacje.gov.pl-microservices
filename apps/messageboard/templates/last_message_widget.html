@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>Najnowsze ogłoszenie</h1>
+    <h2>{{ last_message.title }}</h2>
+    <p>
+        {{ last_message.content }}
+    </p>
+{% endblock %}

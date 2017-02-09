@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>Dodaj ogłoszenie</h1>
+    <form action="" method="POST">
+        <h2>Tytuł</h2>
+        <input type="text" name="title" />
+        <h2>Treść</h2>
+        <textarea name="content"></textarea>
+        <br/>
+        <input type="submit" value="Dodaj"/>
+    </form>
+    <p>
+        <a href="/">Powrót do strony głównej</a>
+    </p>
+{% endblock %}

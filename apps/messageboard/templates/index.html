@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>Ogłoszenia</h1>
+    <p>
+        <a href="/add_message/">Dodaj ogłoszenie</a>
+    </p>
+    {% for message in messages %}
+        <h2>{{ message.title }}</h2>
+        <p>
+            {{ message.content }}
+        </p>
+    {% else %}
+        Brak ogłoszeń.
+    {% endfor %}
+{% endblock %}

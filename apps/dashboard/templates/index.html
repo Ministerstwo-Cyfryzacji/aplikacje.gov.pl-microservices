@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <style>
+        .widget {
+            width: 25%;
+            display: inline-block;
+        }
+        .widget iframe {
+            width: calc(100% - 20px);
+            height: 300px;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <h1>Osobisty pulpit</h1>
+
+    {% for widget in widgets %}
+        <div class="widget">
+            <iframe src="{{ widget.url }}"></iframe>
+        </div>
+    {% endfor %}
+{% endblock %}
+

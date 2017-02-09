@@ -1,0 +1,2 @@
+DB_CONNECTION_URL = 'sqlite:///database.db'
+DEBUG = True
