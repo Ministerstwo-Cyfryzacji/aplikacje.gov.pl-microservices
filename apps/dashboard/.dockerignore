@@ -1,0 +1,8 @@
+__pycache__/
+venv/
+database.db
+Dockerfile
+README.md
+settings.py.example*
+.dockerignore
+.gitignore
