@@ -1,0 +1,8 @@
+__pycahce__/
+venv
+Dockerfile
+README.md
+settings.py.example
+settings.py.example_docker
+.dockerignore
+.gitignore
