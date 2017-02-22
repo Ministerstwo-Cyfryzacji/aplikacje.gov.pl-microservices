@@ -1,4 +1,4 @@
-DB_CONNECTION_URL = 'sqlite:///database.db'
+DB_CONNECTION_URL = 'sqlite:////shared/database.db'
 DEBUG = True
-PORT = 5001
+PORT = 80
 MICROSERVICE_LIST_URL = 'http://127.0.0.1:5000/get_existing_microservices'

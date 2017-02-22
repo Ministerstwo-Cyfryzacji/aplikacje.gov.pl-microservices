@@ -9,3 +9,15 @@ Installation
 * copy the settings from `settings.py.example` to `settings.py`, customizing it if needed,
 * create the database via `python init_db.py`,
 * run the app via `python app.py`.
+
+Run in Docker container
+=======================
+
+    cp settings.py.example_docker settings.py
+    docker build -t messageboard .
+    docker run -p 5001:80/tcp -v /tmp/messageboard:/shared messageboard init_db.py
+    docker run -p 5001:80/tcp -v /tmp/messageboard:/shared messageboard
+
+`-p 5001:80/tcp` denotes port redirection from 5001 on host to 80 inside container.
+
+`-v /tmp/messageboard:/shared/` danotes that host directory `/tmp/messageboard` is mounted on continer directory `/shared`.

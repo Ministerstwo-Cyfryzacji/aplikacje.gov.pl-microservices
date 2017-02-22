@@ -10,7 +10,6 @@ Installation
 * create the database via `python init_db.py`,
 * run the app via `python app.py`.
 
-
 Run in Docker container
 =======================
 
@@ -21,4 +20,4 @@ Run in Docker container
 
 `-p 5002:80/tcp` denotes port redirection from 5002 on host to 80 inside container.
 
-`-v /tmp/dashboard:/shared/` danotes that host directory `/tmp/shared` is mounted on continer directory `/shared`.
+`-v /tmp/dashboard:/shared/` danotes that host directory `/tmp/dashboard` is mounted on continer directory `/shared`.
