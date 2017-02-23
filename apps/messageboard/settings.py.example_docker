@@ -1,4 +1,10 @@
 DB_CONNECTION_URL = 'sqlite:////shared/database.db'
 DEBUG = True
 PORT = 80
-MICROSERVICE_LIST_URL = 'http://127.0.0.1:5000/get_existing_microservices'
+
+# set None to prevent use of external list
+SERVICE_LIST_URL = None
+
+# set None to fallback to URLs from service list endpoint
+SELF_PUBLIC_URL = None
+DASHBOARD_URL = None
