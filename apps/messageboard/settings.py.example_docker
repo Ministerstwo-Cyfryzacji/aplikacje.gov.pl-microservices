@@ -3,8 +3,8 @@ DEBUG = True
 PORT = 80
 
 # set None to prevent use of external list
-SERVICE_LIST_URL = None
+SERVICE_LIST_URL = 'http://dependency_manager/get_existing_microservices'
 
 # set None to fallback to URLs from service list endpoint
 SELF_PUBLIC_URL = None
-DASHBOARD_URL = None
+DASHBOARD_URL = 'http://dashboard'

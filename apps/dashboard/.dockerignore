@@ -3,6 +3,7 @@ venv/
 database.db
 Dockerfile
 README.md
-settings.py.example*
+settings.py
+settings.py.example
 .dockerignore
 .gitignore

@@ -39,4 +39,5 @@ def create_widget():
 
 
 if __name__ == '__main__':
+    database.init_db()
     app.run(debug=settings.DEBUG, host='0.0.0.0', port=settings.PORT)

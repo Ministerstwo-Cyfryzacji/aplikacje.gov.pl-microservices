@@ -1,2 +1,5 @@
 FROM python:3-onbuild
-CMD ["python", "./app.py"]
+
+RUN ["mv", "settings.py.example_docker", "settings.py"]
+
+ENTRYPOINT ["python", "app.py"]

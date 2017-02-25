@@ -78,6 +78,7 @@ if __name__ == '__main__':
     parser.add_argument('--port', type=int, default=settings.PORT, help="Port to listen on")
     args = parser.parse_args()
 
+    database.init_db()
     register_widget(
         args.self_public_url or resolve_service_name(args.service_list_url, 'messageboard', 'public_url'),
         args.dashboard_url or resolve_service_name(args.service_list_url, 'dashboard', 'internal_url'),
