@@ -3,11 +3,11 @@ services:
   dependencymanager:
     build: services/dependencymanager
   dashboard:
-    build: apps/dashboard
+    build: services/dashboard
     ports:
      - 5002:80
   messageboard:
-    build: apps/messageboard
+    build: services/messageboard
     links:
      - dashboard
     ports:
